@@ -26,6 +26,7 @@ RUN rm -rf /etc/apt/apt.conf.d/docker-gzip-indexes \
  && rm -rf /var/lib/apt/lists/*
 
 COPY entrypoint.sh /sbin/entrypoint.sh
+COPY miniserv.conf /etc/webmin/miniserv.conf
 
 RUN chmod 755 /sbin/entrypoint.sh
 
